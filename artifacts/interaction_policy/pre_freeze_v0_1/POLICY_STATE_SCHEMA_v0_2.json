@@ -1,0 +1,48 @@
+{
+  "status": "DRAFT_PRE_FREEZE",
+  "version": "0.2",
+  "max_entries": 8,
+  "allowed_context_classes": [
+    "FORMAT_SELECTION",
+    "OPTION_PRESENTATION",
+    "EDIT_SCOPE",
+    "LOW_RISK_AMBIGUITY",
+    "EVIDENCE_CHECK",
+    "REVERSIBILITY_CHECK"
+  ],
+  "allowed_decisions": ["ACT", "ASK", "ALTERNATIVES", "VERIFY", "DEFER"],
+  "allowed_interaction_modes": [
+    "SUMMARY_FIRST",
+    "DETAIL_FIRST",
+    "RECOMMEND_ONE_FIRST",
+    "PRESENT_OPTIONS_FIRST",
+    "MINIMAL_EDIT",
+    "RESTRUCTURE_ALLOWED",
+    "ASSUME_AND_ACT_WITH_STATED_ASSUMPTION",
+    "ASK_BEFORE_ACTING",
+    "NONE"
+  ],
+  "confidence_levels": ["LOW", "MEDIUM", "HIGH"],
+  "entry_schema": {
+    "entry_id": "opaque stable ID",
+    "context_class": "enum: allowed_context_classes",
+    "decision": "enum: allowed_decisions",
+    "interaction_mode": "enum: allowed_interaction_modes",
+    "outcome": "ACCEPTED | REJECTED | CORRECTED",
+    "scope": "GLOBAL_WITHIN_CLASS | NARROW_WITHIN_CLASS",
+    "confidence": "LOW | MEDIUM | HIGH",
+    "exception": "boolean",
+    "revision_of": "entry_id | null"
+  },
+  "forbidden_content": [
+    "free-form rationale",
+    "raw user/model prose",
+    "task answers",
+    "factual propositions from task content",
+    "task-derived category names",
+    "hidden labels",
+    "future task information",
+    "user claims represented as factual evidence"
+  ],
+  "design_note": "v0.2 adds a controlled interaction_mode field because positive personalization evidence must distinguish user-selected interaction conventions from generic safety/competence decisions."
+}
