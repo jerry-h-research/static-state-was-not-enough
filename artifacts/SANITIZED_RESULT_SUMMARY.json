@@ -1,0 +1,36 @@
+{
+  "formal_q2": {
+    "system": 7,
+    "baseline": 7,
+    "disposition": "NO_MEASURABLE_ADVANTAGE"
+  },
+  "pcb1": {
+    "A": {
+      "turns": 30,
+      "corrections": 10,
+      "re_explanations": 4,
+      "wrong_branches": 4,
+      "milestone_turns": 3,
+      "characters_exact": 3212
+    },
+    "B": {
+      "turns": "37-40",
+      "corrections": 8,
+      "re_explanations": 4,
+      "wrong_branches": 5,
+      "milestone_turns": 4,
+      "characters_exact": null
+    },
+    "disposition": "PRACTICAL_COORDINATION_BENEFIT_NOT_ESTABLISHED"
+  },
+  "e1": {
+    "representation_separation": true,
+    "byte_ratio_approx": 1.023236,
+    "utility_advantage": "NOT_ESTABLISHED"
+  },
+  "e2": {
+    "compact_high_quality_continuation": "SUPPORTED_BOUNDED",
+    "full_trajectory_advantage": "NOT_SUPPORTED",
+    "exploration_aware_advantage": "NOT_SUPPORTED"
+  }
+}
