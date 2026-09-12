@@ -1,0 +1,399 @@
+{
+  "schema_version": 1,
+  "project": "Claim Lifecycle Prototype",
+  "checkpoint": "v0.1.4.21-P3S3",
+  "engine": "src/claim_lifecycle_v0_1_4_20_R13C2.py",
+  "generated_from_checkpoint": {
+    "version": "v0.1.4.20-R13C2",
+    "authoritative_gate_runner": "run_gate.py",
+    "authoritative_gate_result": "GATE_RAW_RESULT.txt",
+    "review_through_round": 13
+  },
+  "suites": [
+    {
+      "id": "historical.canonical",
+      "name": "Canonical regression",
+      "path": "tests/canonical_regression_v0_1_4_9.py",
+      "category": "historical_baseline",
+      "execution_mode": "in_memory_engine_prefix_retarget",
+      "expected_exit_code": 0,
+      "expected_counts": {
+        "total": { "passed": 32, "total": 32, "failed": 0 }
+      },
+      "required_verdict": null,
+      "retarget_engine_if_needed": true,
+      "notes": "Replace the embedded PREFIX engine definition in memory with the current engine definition; never edit the historical file."
+    },
+    {
+      "id": "historical.clean_admission",
+      "name": "Clean admission matrix",
+      "path": "tests/regression_v0_1_4_9_clean_admission_matrix.py",
+      "category": "historical_baseline",
+      "execution_mode": "in_memory_engine_prefix_retarget",
+      "expected_exit_code": 0,
+      "expected_counts": {
+        "total": { "passed": 14, "total": 14, "failed": 0 }
+      },
+      "required_verdict": null,
+      "retarget_engine_if_needed": true,
+      "notes": "Execute the historical test body with the current engine prefix in a temporary artifact only."
+    },
+    {
+      "id": "historical.terminal_negative",
+      "name": "Terminal negative suite",
+      "path": "tests/adversarial_v0_1_4_9_terminal_negative_suite_v2.py",
+      "category": "historical_baseline",
+      "execution_mode": "in_memory_engine_prefix_retarget",
+      "expected_exit_code": 0,
+      "expected_counts": {
+        "total": { "passed": 14, "total": 14, "failed": 0 }
+      },
+      "required_verdict": null,
+      "retarget_engine_if_needed": true,
+      "notes": "Execute against the current engine definition without rewriting the historical artifact."
+    },
+    {
+      "id": "historical.deep_combination",
+      "name": "Deep combination suite",
+      "path": "tests/adversarial_v0_1_4_9_deep_combination_suite.py",
+      "category": "historical_baseline",
+      "execution_mode": "in_memory_engine_prefix_retarget",
+      "expected_exit_code": 0,
+      "expected_counts": {
+        "total": { "passed": 9, "total": 9, "failed": 0 }
+      },
+      "required_verdict": null,
+      "retarget_engine_if_needed": true,
+      "notes": "Execute against the current engine definition without rewriting the historical artifact."
+    },
+    {
+      "id": "targeted.a1_a4",
+      "name": "A1-A4 targeted regression",
+      "path": "tests/regression_v0_1_4_10_A1_A2_A3_A4.py",
+      "category": "targeted_regression",
+      "execution_mode": "in_memory_engine_filename_retarget",
+      "expected_exit_code": 0,
+      "expected_counts": {
+        "total": { "passed": 30, "total": 30, "failed": 0 }
+      },
+      "required_verdict": null,
+      "retarget_engine_if_needed": true,
+      "notes": "Replace embedded historical engine filenames with the current engine filename in memory only."
+    },
+    {
+      "id": "targeted.r2a1_ownership_isolation",
+      "name": "R2A1 ownership-isolation regression",
+      "path": "tests/regression_v0_1_4_11_R2A1_ownership_isolation.py",
+      "category": "targeted_regression",
+      "execution_mode": "in_memory_engine_filename_retarget_or_direct",
+      "expected_exit_code": 0,
+      "expected_counts": {
+        "total": { "passed": 9, "total": 9, "failed": 0 }
+      },
+      "required_verdict": null,
+      "retarget_engine_if_needed": true,
+      "notes": "Retarget an embedded historical engine filename in memory when present; otherwise execute the file directly."
+    },
+    {
+      "id": "adversarial.round2_core",
+      "name": "Round 2 core attacks",
+      "path": "tests/adversarial_v0_1_4_10_round2_alias_ownership.py",
+      "category": "adversarial_regression",
+      "execution_mode": "in_memory_engine_filename_retarget",
+      "expected_exit_code": 0,
+      "expected_counts": {
+        "core": { "passed": 4, "total": 4, "failed": 0 }
+      },
+      "required_verdict": null,
+      "retarget_engine_if_needed": true,
+      "notes": "Retarget the embedded engine filename in memory only."
+    },
+    {
+      "id": "adversarial.round3_core",
+      "name": "Round 3 core attacks",
+      "path": "tests/adversarial_v0_1_4_11_round3_ownership_edges.py",
+      "category": "adversarial_regression",
+      "execution_mode": "in_memory_engine_filename_retarget",
+      "expected_exit_code": 0,
+      "expected_counts": {
+        "core": { "passed": 4, "total": 4, "failed": 0 }
+      },
+      "required_verdict": null,
+      "retarget_engine_if_needed": true,
+      "notes": "Retarget the embedded engine filename in memory only."
+    },
+    {
+      "id": "adversarial.round4_corrected",
+      "name": "Corrected Round 4 state-integrity regression",
+      "path": "tests/adversarial_v0_1_4_12_R4A1_round4_state_integrity.py",
+      "category": "adversarial_regression",
+      "execution_mode": "in_memory_engine_filename_retarget",
+      "expected_exit_code": 0,
+      "expected_counts": {
+        "core": { "passed": 8, "total": 8, "failed": 0 },
+        "expected_behavior": { "passed": 1, "total": 1, "failed": 0 }
+      },
+      "required_verdict": null,
+      "retarget_engine_if_needed": true,
+      "notes": "One execution supplies both the corrected Round 4 core and expected-behavior metrics."
+    },
+    {
+      "id": "targeted.r5a1_terminal_revision",
+      "name": "R5-A1 targeted regression",
+      "path": "tests/reproduce_v0_1_4_13_R5A1_terminal_revision.py",
+      "category": "targeted_regression",
+      "execution_mode": "in_memory_engine_filename_retarget",
+      "expected_exit_code": 0,
+      "expected_counts": {
+        "total": { "passed": 6, "total": 6, "failed": 0 }
+      },
+      "required_verdict": null,
+      "retarget_engine_if_needed": true,
+      "notes": "Retarget the embedded frozen-engine filename to the current engine in memory only."
+    },
+    {
+      "id": "adversarial.round5_corrected",
+      "name": "Corrected post-diagnosis Round 5 regression",
+      "path": "tests/regression_v0_1_4_13_R5A1_round5_terminal_revision_compositions_corrected.py",
+      "category": "adversarial_regression",
+      "execution_mode": "in_memory_engine_filename_retarget",
+      "expected_exit_code": 0,
+      "expected_counts": {
+        "core": { "passed": 5, "total": 5, "failed": 0 },
+        "expected_behavior": { "passed": 1, "total": 1, "failed": 0 }
+      },
+      "required_verdict": {
+        "label": "ROUND 5 CORE VERDICT",
+        "value": "NO CORE BYPASS CONFIRMED IN THIS BATCH"
+      },
+      "retarget_engine_if_needed": true,
+      "notes": "This corrected artifact is authoritative; preserve the original and first retargeted Round 5 artifacts as chronology only."
+    },
+    {
+      "id": "adversarial.round6_corrected",
+      "name": "Corrected post-diagnosis Round 6 regression",
+      "path": "tests/regression_v0_1_4_13_R5A1_round6_composed_state_history_corrected.py",
+      "category": "adversarial_regression",
+      "execution_mode": "in_memory_engine_filename_retarget",
+      "expected_exit_code": 0,
+      "expected_counts": {
+        "core": { "passed": 6, "total": 6, "failed": 0 },
+        "expected_rejection": { "passed": 2, "total": 2, "failed": 0 },
+        "contract_robustness_observation": 2,
+        "invalid_unreachable_setup": 0
+      },
+      "required_verdict": {
+        "label": "ROUND 6 CORRECTED FINAL VERDICT",
+        "value": "NO REACHABLE CORE BYPASS CONFIRMED IN THIS BATCH"
+      },
+      "retarget_engine_if_needed": true,
+      "notes": "Evidence instance identity remains an observable contract/robustness boundary, not a core invariant."
+    },
+    {
+      "id": "adversarial.round7_state_machine_metamorphic",
+      "name": "Round 7 state-machine/metamorphic adversarial review",
+      "path": "tests/adversarial_v0_1_4_13_R5A1_round7_state_machine_metamorphic.py",
+      "category": "adversarial_regression",
+      "execution_mode": "in_memory_engine_filename_retarget",
+      "expected_exit_code": 0,
+      "expected_counts": {
+        "core": { "passed": 10, "total": 10, "failed": 0 },
+        "expected_rejection": { "passed": 2, "total": 2, "failed": 0 },
+        "contract_robustness_observation": 0,
+        "invalid_unreachable_setup": 0,
+        "invalid_unjustified_metamorphic_relation": 0
+      },
+      "required_verdict": {
+        "label": "ROUND 7 FINAL VERDICT",
+        "value": "NO REACHABLE CORE BYPASS CONFIRMED IN THIS BATCH"
+      },
+      "retarget_engine_if_needed": true,
+      "notes": "Finalized Round 7 artifact after correction of the new test-control classification; no historical artifact was rewritten."
+    },
+    {
+      "id": "round8_cross_claim_contamination",
+      "name": "Round 8 cross-claim/cross-lifecycle contamination adversarial review",
+      "path": "tests/adversarial_v0_1_4_13_R5A1_round8_cross_claim_contamination.py",
+      "category": "adversarial_regression",
+      "execution_mode": "in_memory_engine_filename_retarget",
+      "result_protocol": "structured_v1",
+      "expected_exit_code": 0,
+      "expected_counts": {
+        "core": { "passed": 10, "total": 10, "failed": 0 },
+        "expected_rejection": { "passed": 1, "total": 1, "failed": 0 },
+        "contract_robustness_observation": 0,
+        "invalid_unreachable_setup": 1,
+        "invalid_unjustified_metamorphic_relation": 1
+      },
+      "required_verdict": {
+        "label": "ROUND 8 FINAL VERDICT",
+        "value": "NO REACHABLE CORE BYPASS CONFIRMED IN THIS BATCH"
+      },
+      "retarget_engine_if_needed": true,
+      "notes": "First native structured-result adversarial round; require exactly one schema-version-1 marker and fail closed on protocol, identity, count, classification-consistency, status, or verdict mismatch."
+    },
+    {
+      "id": "round9_history_provenance_laundering_corrected",
+      "name": "Round 9 corrected history/provenance laundering adversarial review",
+      "path": "tests/adversarial_v0_1_4_13_R5A1_round9_history_provenance_laundering_corrected.py",
+      "category": "adversarial_regression",
+      "execution_mode": "in_memory_engine_filename_retarget_derived_source",
+      "source_artifact": "tests/adversarial_v0_1_4_13_R5A1_round9_history_provenance_laundering.py",
+      "result_protocol": "structured_v1",
+      "expected_exit_code": 0,
+      "expected_counts": {
+        "core": {
+          "passed": 7,
+          "total": 7,
+          "failed": 0
+        },
+        "expected_rejection": {
+          "passed": 4,
+          "total": 4,
+          "failed": 0
+        },
+        "contract_robustness_observation": 1,
+        "invalid_unreachable_setup": 1,
+        "invalid_unjustified_metamorphic_relation": 1
+      },
+      "required_verdict": {
+        "label": "ROUND 9 CORRECTED FINAL VERDICT",
+        "value": "NO REACHABLE CORE BYPASS CONFIRMED IN THIS BATCH"
+      },
+      "retarget_engine_if_needed": true
+    },
+    {
+      "id": "targeted.r6a1_round10_e1",
+      "name": "R6-A1 Round 10 E1 duplicate-source consistency regression",
+      "path": "tests/regression_v0_1_4_14_R6A1_round10_E1.py",
+      "category": "targeted_regression",
+      "execution_mode": "direct",
+      "expected_exit_code": 0,
+      "expected_counts": {
+        "total": { "passed": 7, "total": 7, "failed": 0 }
+      },
+      "required_verdict": null,
+      "retarget_engine_if_needed": false,
+      "notes": "Dedicated R10-E1 regression targets the current v0.1.4.14-R6A1 engine directly."
+    },
+    {
+      "id": "targeted.r11a8_temporal_authority",
+      "name": "R11-A8 authoritative monotonic store-time regression",
+      "path": "tests/regression_v0_1_4_15_R11A8_round11_A8.py",
+      "category": "targeted_regression",
+      "execution_mode": "direct",
+      "expected_exit_code": 0,
+      "expected_counts": {
+        "total": { "passed": 5, "total": 5, "failed": 0 }
+      },
+      "required_verdict": null,
+      "retarget_engine_if_needed": false,
+      "notes": "Dedicated R11-A8 regression targets the candidate directly and covers rollback attack rejection, forward advancement, admission authority, transaction rollback, and state-neutral rejection."
+    },
+    {
+      "id": "targeted.r12b1_evidence_id_authority",
+      "name": "R12-B1 historical evidence-ID authority regression",
+      "path": "tests/regression_v0_1_4_16_R12B1_round12_B1.py",
+      "category": "targeted_regression",
+      "execution_mode": "direct",
+      "expected_exit_code": 0,
+      "expected_counts": {
+        "total": { "passed": 6, "total": 6, "failed": 0 }
+      },
+      "required_verdict": null,
+      "retarget_engine_if_needed": false,
+      "notes": "Dedicated R12-B1 regression targets the candidate directly and covers the original public evidence_ids removal bypass, clean and inactive-history controls, validation precedence, R10-E1 preservation, and distinct admission."
+    },
+    {
+      "id": "targeted.r12b2_active_source_authority",
+      "name": "R12-B2 active source-revocation discovery regression",
+      "path": "tests/regression_v0_1_4_17_R12B2_round12_B2.py",
+      "category": "targeted_regression",
+      "execution_mode": "direct",
+      "expected_exit_code": 0,
+      "expected_counts": {
+        "total": { "passed": 7, "total": 7, "failed": 0 }
+      },
+      "required_verdict": null,
+      "retarget_engine_if_needed": false,
+      "notes": "Dedicated R12-B2 regression targets the candidate directly and covers removed active-index authority, clean and multi-claim canonical revocation, inactive history, terminal precedence, unchanged R9-C3 behavior, and transaction rollback."
+    },
+    {
+      "id": "targeted.r12b3_finite_numeric_admission",
+      "name": "R12-B3 finite numeric Evidence admission regression",
+      "path": "tests/regression_v0_1_4_18_R12B3_round12_B3.py",
+      "category": "targeted_regression",
+      "execution_mode": "direct",
+      "expected_exit_code": 0,
+      "expected_counts": {
+        "total": { "passed": 10, "total": 10, "failed": 0 }
+      },
+      "required_verdict": null,
+      "retarget_engine_if_needed": false,
+      "notes": "Dedicated R12-B3 regression targets the candidate directly and covers non-finite quality and age admission, finite boundaries, ordinary invalid controls, rejection state neutrality, and normal valid admission."
+    },
+    {
+      "id": "targeted.r13c1_claim_registry_authority",
+      "name": "R13-C1 canonical claim-registry authority regression",
+      "path": "tests/regression_v0_1_4_19_R13C1_round13_C1.py",
+      "category": "targeted_regression",
+      "execution_mode": "direct",
+      "expected_exit_code": 0,
+      "expected_counts": {
+        "total": { "passed": 7, "total": 7, "failed": 0 }
+      },
+      "required_verdict": null,
+      "retarget_engine_if_needed": false,
+      "notes": "Dedicated R13-C1 regression targets the candidate directly and covers fresh and managed replacement, read-path authority, controls, legitimate registration/lookup, and transaction rollback neutrality."
+    },
+    {
+      "id": "targeted.r13c2_boolean_domain",
+      "name": "R13-C2 strict boolean-domain admission regression",
+      "path": "tests/regression_v0_1_4_20_R13C2_round13_C2.py",
+      "category": "targeted_regression",
+      "execution_mode": "direct",
+      "expected_exit_code": 0,
+      "expected_counts": {
+        "total": { "passed": 17, "total": 17, "failed": 0 }
+      },
+      "required_verdict": null,
+      "retarget_engine_if_needed": false,
+      "notes": "Dedicated R13-C2 regression targets the candidate directly and covers strict bool admission for verified_source and entails_claim, truthy and falsy non-bools, False behavior, rejection state neutrality, and normal valid admission."
+    },
+    {
+      "id": "phase3.stage3_revision_provenance",
+      "name": "Phase 3 Stage 3 revision provenance contract",
+      "path": "phase2_tests/test_phase3_stage3_provenance_contract.py",
+      "category": "application_regression",
+      "execution_mode": "direct",
+      "expected_exit_code": 0,
+      "expected_counts": {
+        "total": { "passed": 53, "total": 53, "failed": 0 }
+      },
+      "required_verdict": null,
+      "retarget_engine_if_needed": false,
+      "notes": "Exact phase2.v2 revision-provenance A-BA contract suite under Stage 3A plus Stage 3A.1."
+    }
+  ],
+  "global_requirements": {
+    "all_suites_required": true,
+    "suite_count": 23,
+    "fail_closed_on_missing_or_unparseable_result": true,
+    "historical_baseline_aggregate": {
+      "suite_ids": [
+        "historical.canonical",
+        "historical.clean_admission",
+        "historical.terminal_negative",
+        "historical.deep_combination"
+      ],
+      "passed": 69,
+      "total": 69,
+      "failed": 0
+    },
+    "final_gate": {
+      "pass": true,
+      "checkpoint_remains_green": true,
+      "engine_patch_required": false
+    }
+  }
+}
