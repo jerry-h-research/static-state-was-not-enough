@@ -19,25 +19,29 @@ That leaves a narrower open question:
 
 > **What, if anything, does ongoing human-AI calibration contribute that static state representations fail to preserve?**
 
-## Why Claim Lifecycle is included
+## Why the Claim Lifecycle prototype matters here
 
-The participant-author reports no prior programming background sufficient to independently implement Claim Lifecycle. Yet the human-AI-tool workflow produced executable prototypes, regression/adversarial tests, reviewed repairs, frozen evaluation contracts, and machine evidence.
+The participant-author reports that they did not have enough programming experience to implement Claim Lifecycle independently. Yet the human-AI-tool workflow produced executable prototypes, regression/adversarial tests, reviewed repairs, frozen evaluation contracts, and machine evidence.
 
 Approximate workflow:
 
-`human judgment -> conversational AI formalization/review -> coding-agent implementation/execution -> machine evidence -> conversational review`
+- human judgment
+- conversational AI formalization and review
+- coding-agent implementation and execution
+- machine evidence
+- conversational review
 
 This is **not** proof that programming expertise is unnecessary. It is an N-of-1 capability-access case showing why the human-AI pair itself became part of the research question.
 
 ## Read in this order
 
-1. `paper/technical_report.pdf`
-2. `results/CLAIM_STATUS_MATRIX.md`
-3. `results/EXPERIMENT_TIMELINE.md`
-4. `artifacts/formal_q2/FORMAL_Q2_PUBLIC_SUMMARY.md`
-5. `artifacts/pcb1/PCB1_PUBLIC_SUMMARY.md`
-6. `artifacts/claim_lifecycle/CLAIM_LIFECYCLE_PUBLIC_SUMMARY.md`
-7. `LIMITATIONS.md`
+1. [Technical report](paper/technical_report.pdf)
+2. [Claim status matrix](results/CLAIM_STATUS_MATRIX.md)
+3. [Experiment timeline](results/EXPERIMENT_TIMELINE.md)
+4. [Formal P3.22 Q2 public summary](artifacts/formal_q2/FORMAL_Q2_PUBLIC_SUMMARY.md)
+5. [PCB-1 public summary](artifacts/pcb1/PCB1_PUBLIC_SUMMARY.md)
+6. [Claim Lifecycle public summary](artifacts/claim_lifecycle/CLAIM_LIFECYCLE_PUBLIC_SUMMARY.md)
+7. [Limitations](LIMITATIONS.md)
 
 Raw private transcripts are intentionally excluded from v0.3.
 
