@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this research note, please cite it."
+title: "Static State Was Not Enough"
+type: report
+version: 0.3
+date-released: 2026-09-12
+authors:
+  - family-names: "H."
+    given-names: "Jerry"
