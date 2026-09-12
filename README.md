@@ -40,7 +40,7 @@ This is **not** proof that programming expertise is unnecessary. It is an N-of-1
 3. [Experiment timeline](results/EXPERIMENT_TIMELINE.md)
 4. [Formal P3.22 Q2 public summary](artifacts/formal_q2/FORMAL_Q2_PUBLIC_SUMMARY.md)
 5. [PCB-1 public summary](artifacts/pcb1/PCB1_PUBLIC_SUMMARY.md)
-6. [Claim Lifecycle public summary](artifacts/claim_lifecycle/CLAIM_LIFECYCLE_PUBLIC_SUMMARY.md)
+6. [Claim Lifecycle evidence package](artifacts/claim_lifecycle/README.md)
 7. [Limitations](LIMITATIONS.md)
 
 Raw private transcripts are intentionally excluded from v0.3.
