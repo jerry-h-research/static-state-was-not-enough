@@ -1,6 +1,6 @@
 # Historical concept diagram
 
-This directory is reserved for the English reconstruction of the early **Personal AI — Interaction Learning Architecture v0.1** concept diagram.
+This directory contains the English reconstruction of the early **Personal AI — Interaction Learning Architecture v0.1** concept diagram.
 
 ## Status
 
@@ -8,9 +8,9 @@ The diagram is a **historical concept artifact**, not experimental evidence and 
 
 Its value is historical: it shows the early framing that separated temporary user/interaction/claim state, provenance, evidence checking, re-audit, and an explicit error-amplification path.
 
-## Intended public image
+## Public image
 
-`personal_ai_interaction_learning_architecture_v0_1_en.jpg`
+[View the English historical concept diagram](personal_ai_interaction_learning_architecture_v0_1_en.png)
 
 Caption:
 
