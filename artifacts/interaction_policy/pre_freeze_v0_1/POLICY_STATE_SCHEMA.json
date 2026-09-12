@@ -1,0 +1,35 @@
+{
+  "status": "DRAFT_PRE_FREEZE",
+  "version": "0.1",
+  "max_entries": 8,
+  "allowed_context_classes": [
+    "FORMAT_SELECTION",
+    "ANALYSIS_VS_ACTION",
+    "CLARIFY_SCOPE",
+    "EVIDENCE_CHECK",
+    "REVERSIBILITY_CHECK",
+    "OPTION_PRESENTATION"
+  ],
+  "allowed_decisions": ["ACT", "ASK", "ALTERNATIVES", "VERIFY", "DEFER"],
+  "confidence_levels": ["LOW", "MEDIUM", "HIGH"],
+  "entry_schema": {
+    "entry_id": "opaque stable ID",
+    "context_class": "enum: allowed_context_classes",
+    "decision": "enum: allowed_decisions",
+    "outcome": "ACCEPTED | REJECTED | CORRECTED",
+    "scope": "GLOBAL_WITHIN_CLASS | NARROW_WITHIN_CLASS",
+    "confidence": "LOW | MEDIUM | HIGH",
+    "exception": "boolean",
+    "revision_of": "entry_id | null"
+  },
+  "forbidden_content": [
+    "free-form rationale",
+    "raw user/model prose",
+    "task answers",
+    "factual propositions from task content",
+    "task-derived category names",
+    "hidden labels",
+    "future task information",
+    "user claims represented as factual evidence"
+  ]
+}
