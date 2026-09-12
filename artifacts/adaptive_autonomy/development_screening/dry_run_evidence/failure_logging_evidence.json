@@ -1,0 +1,83 @@
+{
+  "kind": "OFFLINE UNIT TEST ONLY; no live model calls",
+  "fake_calls": 2,
+  "remaining_planned_calls_not_attempted": 118,
+  "events": [
+    {
+      "task_id": "F1-R",
+      "run_id": "F1-R_01",
+      "replicate_id": 1,
+      "order": 1,
+      "planned_at": "2026-09-12T12:42:01.239346+00:00",
+      "started_at": "2026-09-12T12:42:01.240364+00:00",
+      "finished_at": null,
+      "provider": "offline-fake",
+      "model": "offline-fake",
+      "model_version": "fixture-1",
+      "settings": {},
+      "prompt_sha256": "233085447f586baaabdcd295c4602ac0bc63360faf7e7d681930569aa8505b54",
+      "status": "started",
+      "raw_output_path": "raw/F1-R_01.txt",
+      "error_path": "errors/F1-R_01.json"
+    },
+    {
+      "task_id": "F1-R",
+      "run_id": "F1-R_01",
+      "replicate_id": 1,
+      "order": 1,
+      "planned_at": "2026-09-12T12:42:01.239346+00:00",
+      "started_at": "2026-09-12T12:42:01.240364+00:00",
+      "finished_at": "2026-09-12T12:42:01.240364+00:00",
+      "provider": "offline-fake",
+      "model": "offline-fake",
+      "model_version": "fixture-1",
+      "settings": {},
+      "prompt_sha256": "233085447f586baaabdcd295c4602ac0bc63360faf7e7d681930569aa8505b54",
+      "status": "success",
+      "raw_output_path": "raw/F1-R_01.txt",
+      "error_path": "errors/F1-R_01.json"
+    },
+    {
+      "task_id": "F1-R",
+      "run_id": "F1-R_02",
+      "replicate_id": 2,
+      "order": 2,
+      "planned_at": "2026-09-12T12:42:01.239346+00:00",
+      "started_at": "2026-09-12T12:42:01.241353+00:00",
+      "finished_at": null,
+      "provider": "offline-fake",
+      "model": "offline-fake",
+      "model_version": "fixture-1",
+      "settings": {},
+      "prompt_sha256": "233085447f586baaabdcd295c4602ac0bc63360faf7e7d681930569aa8505b54",
+      "status": "started",
+      "raw_output_path": "raw/F1-R_02.txt",
+      "error_path": "errors/F1-R_02.json"
+    },
+    {
+      "task_id": "F1-R",
+      "run_id": "F1-R_02",
+      "replicate_id": 2,
+      "order": 2,
+      "planned_at": "2026-09-12T12:42:01.239346+00:00",
+      "started_at": "2026-09-12T12:42:01.241353+00:00",
+      "finished_at": "2026-09-12T12:42:01.241353+00:00",
+      "provider": "offline-fake",
+      "model": "offline-fake",
+      "model_version": "fixture-1",
+      "settings": {},
+      "prompt_sha256": "233085447f586baaabdcd295c4602ac0bc63360faf7e7d681930569aa8505b54",
+      "status": "provider_failure",
+      "raw_output_path": "raw/F1-R_02.txt",
+      "error_path": "errors/F1-R_02.json"
+    }
+  ],
+  "separate_error_record": {
+    "run_id": "F1-R_02",
+    "timestamp": "2026-09-12T12:42:01.241353+00:00",
+    "error_type": "ConnectionError",
+    "message": "OFFLINE simulated provider failure; no semantic output",
+    "usable_semantic_output": false
+  },
+  "preserved_semantic_output": "OFFLINE semantic fixture"
+}

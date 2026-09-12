@@ -1,0 +1,16 @@
+test_120_fresh_fake_invocations_preserve_semantics (test_runner.RunnerTests.test_120_fresh_fake_invocations_preserve_semantics) ... ok
+test_blank_deterministic_coding_sheet (test_runner.RunnerTests.test_blank_deterministic_coding_sheet) ... ok
+test_code_indentation_and_unicode (test_runner.RunnerTests.test_code_indentation_and_unicode) ... ok
+test_complete_dry_run_never_executes (test_runner.RunnerTests.test_complete_dry_run_never_executes) ... ok
+test_execution_gates (test_runner.RunnerTests.test_execution_gates) ... ok
+test_failure_logged_and_stops_without_retry (test_runner.RunnerTests.test_failure_logged_and_stops_without_retry) ... ok
+test_no_overwrite (test_runner.RunnerTests.test_no_overwrite) ... ok
+test_request_allowlist_and_independence (test_runner.RunnerTests.test_request_allowlist_and_independence) ... ok
+test_tampered_fixture_rejected (test_runner.RunnerTests.test_tampered_fixture_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.320s
+
+OK
+
+Exit code: 0

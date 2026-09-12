@@ -1,0 +1,11 @@
+{
+  "provider": null,
+  "model": null,
+  "model_version": null,
+  "settings": {},
+  "configuration_status": "UNCONFIGURED: requires selection before live screening",
+  "base_instruction": null,
+  "replicates": 10,
+  "order": "source task order, replicate 01 through 10",
+  "context_policy": "one user message; fresh provider instance per invocation; no memory"
+}

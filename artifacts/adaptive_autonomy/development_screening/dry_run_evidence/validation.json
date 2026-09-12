@@ -1,0 +1,43 @@
+{
+  "mode": "dry-run",
+  "executed_model_calls": 0,
+  "planned_calls": 120,
+  "replicates_by_task": {
+    "F1-R": 10,
+    "F1-N": 10,
+    "F1-B": 10,
+    "F2-R": 10,
+    "F2-N": 10,
+    "F2-B": 10,
+    "F3-R": 10,
+    "F3-N": 10,
+    "F3-B": 10,
+    "F4-R": 10,
+    "F4-N": 10,
+    "F4-B": 10
+  },
+  "checks": {
+    "exact_source_transcription": true,
+    "twelve_unique_task_ids": true,
+    "ten_replicates_per_task": true,
+    "exactly_120_planned_calls": true,
+    "unique_output_paths": true,
+    "unique_failure_paths": true,
+    "only_exact_user_prompt_in_messages": true,
+    "no_metadata_or_prior_context_in_request": true,
+    "all_prompt_hashes_recorded": true,
+    "zero_model_calls": true
+  },
+  "source_sha256": "5c41510997cedb8dfab57407b6cea0bc93b39068c8dddcf1404900bdc7cbad20",
+  "config": {
+    "provider": null,
+    "model": null,
+    "model_version": null,
+    "settings": {},
+    "configuration_status": "UNCONFIGURED: requires selection before live screening",
+    "base_instruction": null,
+    "replicates": 10,
+    "order": "source task order, replicate 01 through 10",
+    "context_policy": "one user message; fresh provider instance per invocation; no memory"
+  }
+}

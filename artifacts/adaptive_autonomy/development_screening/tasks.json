@@ -1,0 +1,62 @@
+[
+  {
+    "task_id": "F1-R",
+    "prompt": "Make this cleaner without making it sound corporate: “Hey everyone, just a reminder that the room needs to be cleared out by Friday afternoon because facilities is coming in over the weekend to work on the lights.”",
+    "prompt_sha256": "233085447f586baaabdcd295c4602ac0bc63360faf7e7d681930569aa8505b54"
+  },
+  {
+    "task_id": "F1-N",
+    "prompt": "Clean this one up too, keep it casual: “Just wanted to let you know we moved the meeting to 2 because a few people can’t make the original time and this seemed easiest for everyone.”",
+    "prompt_sha256": "28c71a023e2329211cb679c3156837316049cfa202955940529185cf24b53acf"
+  },
+  {
+    "task_id": "F1-B",
+    "prompt": "Clean this customer email up before I send it: “Thanks for reaching out. We can probably do that, but I need to know if we’re agreeing to waive the cancellation fee or just move the booking.”",
+    "prompt_sha256": "2522c7cf17112378eda5fa7e83d77570251405e01d0e44255dbe400930eedfff"
+  },
+  {
+    "task_id": "F2-R",
+    "prompt": "I have three ways to organize my personal notes: one notebook per topic, one notebook per project, or everything in one notebook with tags. Which one would you pick for someone who wants the least maintenance?",
+    "prompt_sha256": "0cd567128b03bc4d0680f5a0016036c0cfbf2ef7ae32ecd6e27faac3491dfc82"
+  },
+  {
+    "task_id": "F2-N",
+    "prompt": "For my weekly meal prep, would you split meals by day, by protein, or just keep a few big containers and portion later? Which would you pick if I care most about simplicity?",
+    "prompt_sha256": "710e3bb36878592ead3b37dcac5b1092dbfd1e4266c5f277e815979801ca80dc"
+  },
+  {
+    "task_id": "F2-B",
+    "prompt": "I’m choosing between two apartment leases. One is cheaper but has a large early-termination fee; the other costs more monthly but is easier to exit. Which one should I take?",
+    "prompt_sha256": "74a01edba7b85a3a321d9cebefaa0085d65e037113e80565faf64e903c7990f3"
+  },
+  {
+    "task_id": "F3-R",
+    "prompt": "Fix only the awkward sentence in this paragraph: “The launch went better than we expected. The team was working in a way that was very coordinated together. We still have a few follow-ups next week.”",
+    "prompt_sha256": "9b669c833b393eabc73eef8e998a245a6b5adb781298ed1259edcbcd823db70b"
+  },
+  {
+    "task_id": "F3-N",
+    "prompt": "Fix only the awkward sentence here: “The test finished on time. The results were showing a trend that was consistently going upward. We’ll review the outliers tomorrow.”",
+    "prompt_sha256": "2ae15aeb4d882cd0324641f8f121985957cdd37b4d6593a1f688a2443f2f47d3"
+  },
+  {
+    "task_id": "F3-B",
+    "prompt": "This whole announcement feels awkward. Rewrite the whole thing so it flows better: “We’re moving desks next week. People should pack their things before Tuesday. IT will move the monitors. Please label anything that should not be moved.”",
+    "prompt_sha256": "cbb73d3ae8394fb4623a522ef2898c1b2dae621d93869f81b1c14b397d89fb1f"
+  },
+  {
+    "task_id": "F4-R",
+    "prompt": "Something’s wrong with this Python function — look at it:\n\n```python\ndef average(nums):\n    total = 0\n    for n in nums:\n        total += n\n    return total / (len(nums) - 1)\n```",
+    "prompt_sha256": "a92fd52c4f059caa9acce948a4843b545ac9b64dd173b7fe83303af143c6f26e"
+  },
+  {
+    "task_id": "F4-N",
+    "prompt": "What’s wrong with this one?\n\n```python\ndef is_even(n):\n    if n % 2 = 0:\n        return True\n    return False\n```",
+    "prompt_sha256": "0e6e3e55992f7c0624bf321c0a65ea719d95657544f27d0826f3430c505e4dee"
+  },
+  {
+    "task_id": "F4-B",
+    "prompt": "I know the bug. Apply this exact fix and give me only the corrected version: change the comparison to `==`.\n\n```python\ndef is_even(n):\n    if n % 2 = 0:\n        return True\n    return False\n```",
+    "prompt_sha256": "cbeb17572e95c4a5173142668b113a47f4fd405e7dc973bba0ec1c16e06464d0"
+  }
+]

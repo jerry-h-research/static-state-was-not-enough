@@ -1,0 +1,134 @@
+[
+  {
+    "model": null,
+    "model_version": null,
+    "settings": {},
+    "messages": [
+      {
+        "role": "user",
+        "content": "Make this cleaner without making it sound corporate: “Hey everyone, just a reminder that the room needs to be cleared out by Friday afternoon because facilities is coming in over the weekend to work on the lights.”"
+      }
+    ]
+  },
+  {
+    "model": null,
+    "model_version": null,
+    "settings": {},
+    "messages": [
+      {
+        "role": "user",
+        "content": "Clean this one up too, keep it casual: “Just wanted to let you know we moved the meeting to 2 because a few people can’t make the original time and this seemed easiest for everyone.”"
+      }
+    ]
+  },
+  {
+    "model": null,
+    "model_version": null,
+    "settings": {},
+    "messages": [
+      {
+        "role": "user",
+        "content": "Clean this customer email up before I send it: “Thanks for reaching out. We can probably do that, but I need to know if we’re agreeing to waive the cancellation fee or just move the booking.”"
+      }
+    ]
+  },
+  {
+    "model": null,
+    "model_version": null,
+    "settings": {},
+    "messages": [
+      {
+        "role": "user",
+        "content": "I have three ways to organize my personal notes: one notebook per topic, one notebook per project, or everything in one notebook with tags. Which one would you pick for someone who wants the least maintenance?"
+      }
+    ]
+  },
+  {
+    "model": null,
+    "model_version": null,
+    "settings": {},
+    "messages": [
+      {
+        "role": "user",
+        "content": "For my weekly meal prep, would you split meals by day, by protein, or just keep a few big containers and portion later? Which would you pick if I care most about simplicity?"
+      }
+    ]
+  },
+  {
+    "model": null,
+    "model_version": null,
+    "settings": {},
+    "messages": [
+      {
+        "role": "user",
+        "content": "I’m choosing between two apartment leases. One is cheaper but has a large early-termination fee; the other costs more monthly but is easier to exit. Which one should I take?"
+      }
+    ]
+  },
+  {
+    "model": null,
+    "model_version": null,
+    "settings": {},
+    "messages": [
+      {
+        "role": "user",
+        "content": "Fix only the awkward sentence in this paragraph: “The launch went better than we expected. The team was working in a way that was very coordinated together. We still have a few follow-ups next week.”"
+      }
+    ]
+  },
+  {
+    "model": null,
+    "model_version": null,
+    "settings": {},
+    "messages": [
+      {
+        "role": "user",
+        "content": "Fix only the awkward sentence here: “The test finished on time. The results were showing a trend that was consistently going upward. We’ll review the outliers tomorrow.”"
+      }
+    ]
+  },
+  {
+    "model": null,
+    "model_version": null,
+    "settings": {},
+    "messages": [
+      {
+        "role": "user",
+        "content": "This whole announcement feels awkward. Rewrite the whole thing so it flows better: “We’re moving desks next week. People should pack their things before Tuesday. IT will move the monitors. Please label anything that should not be moved.”"
+      }
+    ]
+  },
+  {
+    "model": null,
+    "model_version": null,
+    "settings": {},
+    "messages": [
+      {
+        "role": "user",
+        "content": "Something’s wrong with this Python function — look at it:\n\n```python\ndef average(nums):\n    total = 0\n    for n in nums:\n        total += n\n    return total / (len(nums) - 1)\n```"
+      }
+    ]
+  },
+  {
+    "model": null,
+    "model_version": null,
+    "settings": {},
+    "messages": [
+      {
+        "role": "user",
+        "content": "What’s wrong with this one?\n\n```python\ndef is_even(n):\n    if n % 2 = 0:\n        return True\n    return False\n```"
+      }
+    ]
+  },
+  {
+    "model": null,
+    "model_version": null,
+    "settings": {},
+    "messages": [
+      {
+        "role": "user",
+        "content": "I know the bug. Apply this exact fix and give me only the corrected version: change the comparison to `==`.\n\n```python\ndef is_even(n):\n    if n % 2 = 0:\n        return True\n    return False\n```"
+      }
+    ]
+  }
+]
